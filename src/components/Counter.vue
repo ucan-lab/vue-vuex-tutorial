@@ -17,6 +17,11 @@ export default {
     decrement () {
       this.$store.commit('decrement')
     }
+  },
+  computed: {
+    count () {
+      return this.$store.state.count
+    }
   }
 }
 </script>
