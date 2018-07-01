@@ -1,4 +1,6 @@
-# vue-vuex-tutorial
+# Vuex入門
+
+https://vuex.vuejs.org/ja/guide
 
 > A Vue.js project
 
