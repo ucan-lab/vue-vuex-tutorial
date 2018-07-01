@@ -15,3 +15,6 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+store.commit('increment')
+console.log(store.state.count)
