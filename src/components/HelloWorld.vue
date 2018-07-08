@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <router-link to="counter">Counter</router-link>
+    <router-link to="todo">todo</router-link>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -96,7 +98,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {

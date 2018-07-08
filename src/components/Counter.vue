@@ -1,6 +1,5 @@
 <template>
   <section>
-    <p>{{ total }}</p>
     <p>{{ count }}</p>
     <p>
       <button @click="increment">+</button>
@@ -31,20 +30,8 @@ export default {
   //     return this.$store.state.count
   //   }
   // }
-  // computed: mapState([
-  //   'count'
-  // ])
-  computed: {
-    total () {
-      return this.price * 1.08
-    },
-    // オブジェクトスプレット演算子で、外のオブジェクトとこのオブジェクトを混ぜる
-    ...mapState([
-      'count'
-    ]),
-    ...mapState({
-      'foo': this.price
-    })
-  }
+  computed: mapState([
+    'count'
+  ])
 }
 </script>
